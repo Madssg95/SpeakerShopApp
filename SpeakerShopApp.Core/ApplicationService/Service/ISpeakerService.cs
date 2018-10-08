@@ -10,15 +10,12 @@ namespace SpeakerShopApp.Core.ApplicationService.Service
 
         //Read
         Speaker ReadSpeakerById(int id);
-        
         List<Speaker> ReadAllSpeakers();
 
         //Update
         Speaker UpdateSpeaker(Speaker speaker);
 
         //Delete
-        Speaker DeleteSpeaker(Speaker speaker);
-
-        //Hej
+        Speaker DeleteSpeaker(int id);
     }
 }

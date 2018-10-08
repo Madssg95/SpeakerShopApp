@@ -11,8 +11,4 @@
     <ItemGroup>
       <ProjectReference Include="..\SpeakerShopApp.Core.Entity\SpeakerShopApp.Core.Entity.csproj" />
     </ItemGroup>
-
-    <ItemGroup>
-      <Compile Remove="ApplicationService\Service\ISpeakerService.cs" />
-    </ItemGroup>
 </Project>
