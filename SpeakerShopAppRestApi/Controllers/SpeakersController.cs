@@ -29,7 +29,7 @@ namespace SpeakerShopAppRestApi.Controllers
             {
                 return Ok(_speakerService.ReadAllSpeakers(filter));
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
                 return BadRequest(e.Message);
             }

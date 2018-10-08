@@ -16,7 +16,7 @@ namespace SpeakerShopApp.Core.ApplicationService.Impl
             throw new System.NotImplementedException();
         }
 
-        public List<Speaker> ReadAllSpeakers()
+        public List<Speaker> ReadAllSpeakers(Filter filter)
         {
             throw new System.NotImplementedException();
         }
