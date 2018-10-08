@@ -5,7 +5,9 @@
     <e p="C:\Users\madsg\.Rider2018.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\madsg\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_SpeakerShopAppRestApi.1378493281.00" t="ExcludeRecursive" />
     <e p="C:\Users\madsg\source\repos\SpeakerShopAppRestApi" t="IncludeFlat">
+      <e p="Core" t="Include" />
       <e p="packages" t="ExcludeRecursive" />
+      <e p="Repository" t="Include" />
       <e p="SpeakerShopAppRestApi" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
@@ -29,6 +31,7 @@
         <e p="wwwroot" t="Include" />
       </e>
       <e p="SpeakerShopAppRestApi.sln" t="IncludeFlat" />
+      <e p="UI" t="Include" />
     </e>
   </component>
 </project>

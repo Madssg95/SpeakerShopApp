@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeakerShopAppRestApi", "SpeakerShopAppRestApi\SpeakerShopAppRestApi.csproj", "{C70EA7AD-E759-48E9-9930-A89C2590951E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{19695C08-90A0-45E9-B70A-12C72A423166}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{F49C05E5-3D73-4EAE-A2D2-738C167F4FCE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{31F2ADCB-1823-4BB1-9741-40E5E4F29CC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,8 @@ Global
 		{C70EA7AD-E759-48E9-9930-A89C2590951E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C70EA7AD-E759-48E9-9930-A89C2590951E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C70EA7AD-E759-48E9-9930-A89C2590951E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C70EA7AD-E759-48E9-9930-A89C2590951E} = {31F2ADCB-1823-4BB1-9741-40E5E4F29CC5}
 	EndGlobalSection
 EndGlobal
