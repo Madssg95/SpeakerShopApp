@@ -14,7 +14,9 @@ namespace SpeakerShopApp.Infrastructure.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<Speaker>().HasOne(s => s.Brand).WithMany(b => b.Speaker).OnDelete(DeleteBehavior.SetNull);
-        }
+            modelBuilder.Entity<Speaker>()
+                        .HasOne<Brand>(p => p.SpeakerBrand)
+                        .WithMany(o => o.Speakers)
+                        .OnDelete(DeleteBehavior.SetNull);}
     }
 }
