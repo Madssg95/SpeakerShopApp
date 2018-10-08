@@ -4,7 +4,6 @@ namespace SpeakerShopApp.Core.DomainService
     {
        //Create
         
-        
         //Read
         
         //Update
