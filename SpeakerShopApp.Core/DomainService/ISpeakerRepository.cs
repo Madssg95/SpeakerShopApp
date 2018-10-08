@@ -5,12 +5,6 @@ namespace SpeakerShopApp.Core.DomainService
 {
     public interface ISpeakerRepository
     {
-<<<<<<< HEAD
-       //Create
-        
-        //Read
-        
-=======
         //Create
         Speaker CreateSpeaker(Speaker speaker);
 
@@ -19,7 +13,6 @@ namespace SpeakerShopApp.Core.DomainService
 
         Speaker ReadSpeakerById(int id);
 
->>>>>>> 68ea9c7d754b69a000a445ed79c0791fa18bcb83
         //Update
         Speaker UpdateSpeaker(Speaker speakerUpdate);
 
