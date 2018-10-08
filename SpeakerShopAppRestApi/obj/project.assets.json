@@ -11500,30 +11500,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\madsg\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/morten/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\madsg\\source\\repos\\SpeakerShopAppRestApi\\SpeakerShopAppRestApi\\SpeakerShopAppRestApi.csproj",
+      "projectUniqueName": "/Users/morten/Documents/GitHub/SpeakerShopApp/SpeakerShopAppRestApi/SpeakerShopAppRestApi.csproj",
       "projectName": "SpeakerShopAppRestApi",
-      "projectPath": "C:\\Users\\madsg\\source\\repos\\SpeakerShopAppRestApi\\SpeakerShopAppRestApi\\SpeakerShopAppRestApi.csproj",
-      "packagesPath": "C:\\Users\\madsg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\madsg\\source\\repos\\SpeakerShopAppRestApi\\SpeakerShopAppRestApi\\obj\\",
+      "projectPath": "/Users/morten/Documents/GitHub/SpeakerShopApp/SpeakerShopAppRestApi/SpeakerShopAppRestApi.csproj",
+      "packagesPath": "/Users/morten/.nuget/packages/",
+      "outputPath": "/Users/morten/Documents/GitHub/SpeakerShopApp/SpeakerShopAppRestApi/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\madsg\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/morten/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11540,17 +11538,16 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
-          "Microsoft.AspNetCore.App": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[2.1.1, )",
-            "autoReferenced": true
-          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.1.0, )",
+            "version": "2.1",
             "autoReferenced": true
+          },
+          "Microsoft.AspNetCore.App": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "2.1.1"
           }
         },
         "imports": [
