@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0bae0756-d4d3-4d92-966e-13035eda17b0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/IBrandService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/IBrandService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/ISpeakerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/ISpeakerService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeakerShopApp.Core/DomainService/IBrandRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpeakerShopApp.Core/DomainService/IBrandRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeakerShopApp.Core/DomainService/ISpeakerRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpeakerShopApp.Core/DomainService/ISpeakerRepository.cs" afterDir="false" />
-    </list>
+    <list default="true" id="0bae0756-d4d3-4d92-966e-13035eda17b0" name="Default Changelist" comment="Created packages on master" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/ISpeakerService.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+            <state relative-caret-position="270">
+              <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
               <folding>
                 <marker date="1538993478750" expanded="true" signature="6:67" ph="..." />
                 <marker date="1538993478750" expanded="true" signature="125:473" ph="{...}" />
@@ -115,7 +110,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Core/DomainService/IBrandRepository.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -132,12 +127,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Core/DomainService/ISpeakerRepository.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state relative-caret-position="285">
+              <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
               <folding>
-                <marker date="1538993720187" expanded="true" signature="43:191" ph="{...}" />
-                <marker date="1538993720187" expanded="true" signature="85:189" ph="{...}" />
-                <marker date="1538993720187" expanded="true" signature="99:183" ph="/* Create ... */" />
+                <marker date="1538993862765" expanded="true" signature="6:67" ph="..." />
+                <marker date="1538993862765" expanded="true" signature="112:468" ph="{...}" />
+                <marker date="1538993862765" expanded="true" signature="154:466" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -181,8 +176,8 @@
         <option value="$PROJECT_DIR$/SpeakerShopApp.Infrastructure.Data/Class1.cs" />
         <option value="$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/IBrandService.cs" />
         <option value="$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/ISpeakerService.cs" />
-        <option value="$PROJECT_DIR$/SpeakerShopApp.Core/DomainService/ISpeakerRepository.cs" />
         <option value="$PROJECT_DIR$/SpeakerShopApp.Core/DomainService/IBrandRepository.cs" />
+        <option value="$PROJECT_DIR$/SpeakerShopApp.Core/DomainService/ISpeakerRepository.cs" />
       </list>
     </option>
   </component>
@@ -439,12 +434,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538990439759</updated>
-      <workItem from="1538990441028" duration="3111000" />
+      <workItem from="1538990441028" duration="3352000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3111000" />
+    <option name="totallyTimeSpent" value="3352000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -457,7 +452,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
@@ -570,38 +564,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/IBrandService.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-          <folding>
-            <marker date="1538993478726" expanded="true" signature="6:67" ph="..." />
-            <marker date="1538993478726" expanded="true" signature="125:434" ph="{...}" />
-            <marker date="1538993478726" expanded="true" signature="162:432" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Core/DomainService/ISpeakerRepository.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        <state relative-caret-position="285">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
           <folding>
-            <marker date="1538993720187" expanded="true" signature="43:191" ph="{...}" />
-            <marker date="1538993720187" expanded="true" signature="85:189" ph="{...}" />
-            <marker date="1538993720187" expanded="true" signature="99:183" ph="/* Create ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/ISpeakerService.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-          <folding>
-            <marker date="1538993478750" expanded="true" signature="6:67" ph="..." />
-            <marker date="1538993478750" expanded="true" signature="125:473" ph="{...}" />
-            <marker date="1538993478750" expanded="true" signature="164:471" ph="{...}" />
+            <marker date="1538993862765" expanded="true" signature="6:67" ph="..." />
+            <marker date="1538993862765" expanded="true" signature="112:468" ph="{...}" />
+            <marker date="1538993862765" expanded="true" signature="154:466" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -614,6 +584,30 @@
             <marker date="1538993720165" expanded="true" signature="6:67" ph="..." />
             <marker date="1538993720165" expanded="true" signature="112:431" ph="{...}" />
             <marker date="1538993720165" expanded="true" signature="152:429" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/IBrandService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding>
+            <marker date="1538993478726" expanded="true" signature="6:67" ph="..." />
+            <marker date="1538993478726" expanded="true" signature="125:434" ph="{...}" />
+            <marker date="1538993478726" expanded="true" signature="162:432" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/ISpeakerService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+          <folding>
+            <marker date="1538993478750" expanded="true" signature="6:67" ph="..." />
+            <marker date="1538993478750" expanded="true" signature="125:473" ph="{...}" />
+            <marker date="1538993478750" expanded="true" signature="164:471" ph="{...}" />
           </folding>
         </state>
       </provider>

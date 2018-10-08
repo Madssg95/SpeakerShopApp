@@ -10,6 +10,7 @@ namespace SpeakerShopApp.Core.ApplicationService.Service
 
         //Read
         Speaker ReadSpeakerById(int id);
+        
         List<Speaker> ReadAllSpeakers();
 
         //Update
