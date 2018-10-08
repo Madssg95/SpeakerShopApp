@@ -18,5 +18,7 @@ namespace SpeakerShopApp.Core.ApplicationService.Service
 
         //Delete
         Speaker DeleteSpeaker(Speaker speaker);
+
+        //Hej
     }
 }
