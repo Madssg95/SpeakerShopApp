@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bae0756-d4d3-4d92-966e-13035eda17b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/IBrandService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/ISpeakerService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpeakerShopApp.Core/DomainService/IBrandRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SpeakerShopAppRestApi/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SpeakerShopAppRestApi/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SpeakerShopAppRestApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SpeakerShopAppRestApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeakerShopApp.Core.Entity/obj/Debug/netstandard2.0/SpeakerShopApp.Core.Entity.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpeakerShopApp.Core.Entity/obj/Debug/netstandard2.0/SpeakerShopApp.Core.Entity.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeakerShopApp.Core/obj/Debug/netstandard2.0/SpeakerShopApp.Core.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpeakerShopApp.Core/obj/Debug/netstandard2.0/SpeakerShopApp.Core.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeakerShopApp.Core/SpeakerShopApp.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SpeakerShopApp.Core/SpeakerShopApp.Core.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpeakerShopAppRestApi.sln" beforeDir="false" afterPath="$PROJECT_DIR$/SpeakerShopAppRestApi.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/Debug/netcoreapp2.1/SpeakerShopAppRestApi.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/Debug/netcoreapp2.1/SpeakerShopAppRestApi.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/SpeakerShopAppRestApi.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/SpeakerShopAppRestApi.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/SpeakerShopAppRestApi.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/SpeakerShopAppRestApi.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/SpeakerShopAppRestApi.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/SpeakerShopAppRestApi.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/project.assets.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,24 +31,28 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="6" />
+          <entry key="cs" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="6" />
+          <entry key="C#" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="cs" value="101" />
           <entry key="txt" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="C#" value="101" />
           <entry key="PLAIN_TEXT" value="33" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
     </session>
   </component>
   <component name="FileEditorManager">
@@ -68,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SpeakerShopAppRestApi/Controllers/SpeakersController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="8" selection-start-line="8" selection-end-line="9" />
+            <state relative-caret-position="300">
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
               <folding>
                 <marker date="1538990754555" expanded="false" signature="6:128" ph="..." />
                 <marker date="1538990754555" expanded="true" signature="173:983" ph="{...}" />
@@ -84,13 +95,57 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Cpre/Class1.cs">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/ISpeakerService.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="150">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
               <folding>
-                <marker date="1538991491316" expanded="true" signature="29:69" ph="{...}" />
-                <marker date="1538991491316" expanded="true" signature="55:67" ph="{...}" />
+                <marker date="1538993162336" expanded="true" signature="56:202" ph="{...}" />
+                <marker date="1538993162336" expanded="true" signature="95:200" ph="{...}" />
+                <marker date="1538993162336" expanded="true" signature="110:194" ph="/* Create ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/IBrandService.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+              <folding>
+                <marker date="1538993237166" expanded="true" signature="91:260" ph="{...}" />
+                <marker date="1538993237166" expanded="true" signature="128:258" ph="{...}" />
+                <marker date="1538993237166" expanded="true" signature="226:252" ph="/* Update ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Core/DomainService/IBrandRepository.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+              <folding>
+                <marker date="1538993162288" expanded="true" signature="43:190" ph="{...}" />
+                <marker date="1538993162288" expanded="true" signature="83:188" ph="{...}" />
+                <marker date="1538993162288" expanded="true" signature="98:182" ph="/* Create ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Core/DomainService/ISpeakerRepository.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+              <folding>
+                <marker date="1538993200094" expanded="true" signature="43:200" ph="{...}" />
+                <marker date="1538993200094" expanded="true" signature="85:198" ph="{...}" />
+                <marker date="1538993200094" expanded="true" signature="134:192" ph="/* Read ... */" />
               </folding>
             </state>
           </provider>
@@ -118,8 +173,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/SpeakerShopAppRestApi/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SpeakerShopAppRestApi/Controllers/SpeakersController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/ISpeakerService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/IBrandService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SpeakerShopAppRestApi/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SpeakerShopApp.Cpre/Class1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SpeakerShopApp.Core/DomainService/IBrandRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SpeakerShopApp.Core/DomainService/ISpeakerRepository.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -128,6 +186,11 @@
         <option value="$PROJECT_DIR$/SpeakerShopApp.Cpre/Class1.cs" />
         <option value="$PROJECT_DIR$/SpeakerShopApp.Core.Entity/Class1.cs" />
         <option value="$PROJECT_DIR$/SpeakerShopApp.Core/Class1.cs" />
+        <option value="$PROJECT_DIR$/SpeakerShopApp.Infrastructure.Data/Class1.cs" />
+        <option value="$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/ISpeakerService.cs" />
+        <option value="$PROJECT_DIR$/SpeakerShopApp.Core/DomainService/IBrandRepository.cs" />
+        <option value="$PROJECT_DIR$/SpeakerShopApp.Core/DomainService/ISpeakerRepository.cs" />
+        <option value="$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/IBrandService.cs" />
       </list>
     </option>
   </component>
@@ -164,7 +227,59 @@
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="SpeakerShopAppRestApi" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Core" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="SpeakerShopApp.Core" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="SpeakerShopAppRestApi" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Core" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="SpeakerShopApp.Core" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ApplicationService" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="SpeakerShopAppRestApi" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Core" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="SpeakerShopApp.Core" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ApplicationService" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Service" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="SpeakerShopAppRestApi" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Core" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="SpeakerShopApp.Core" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="DomainService" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="SpeakerShopAppRestApi" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Infrastructure" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="SpeakerShopAppRestApi" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Infrastructure" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="SpeakerShopApp.Infrastructure.Data" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="SpeakerShopAppRestApi" type="24d0babc:SolutionExplorerModelNode" />
               <item name="UI" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="SpeakerShopAppRestApi" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="UI" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="SpeakerShopAppRestApi" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="SpeakerShopAppRestApi" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="UI" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="SpeakerShopAppRestApi" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -332,12 +447,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538990439759</updated>
-      <workItem from="1538990441028" duration="1129000" />
+      <workItem from="1538990441028" duration="2632000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1129000" />
+    <option name="totallyTimeSpent" value="2632000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -350,6 +465,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
@@ -429,10 +545,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Core/Class1.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Core.Entity/Class1.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Cpre/Class1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Infrastructure.Data/Class1.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/SpeakerShopAppRestApi/Controllers/SpeakersController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" selection-start-line="8" selection-end-line="9" />
+        <state relative-caret-position="300">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
           <folding>
             <marker date="1538990754555" expanded="false" signature="6:128" ph="..." />
             <marker date="1538990754555" expanded="true" signature="173:983" ph="{...}" />
@@ -446,18 +578,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Core/Class1.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Core.Entity/Class1.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Cpre/Class1.cs">
+    <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/ISpeakerService.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="150">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
           <folding>
-            <marker date="1538991491316" expanded="true" signature="29:69" ph="{...}" />
-            <marker date="1538991491316" expanded="true" signature="55:67" ph="{...}" />
+            <marker date="1538993162336" expanded="true" signature="56:202" ph="{...}" />
+            <marker date="1538993162336" expanded="true" signature="95:200" ph="{...}" />
+            <marker date="1538993162336" expanded="true" signature="110:194" ph="/* Create ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Core/DomainService/IBrandRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding>
+            <marker date="1538993162288" expanded="true" signature="43:190" ph="{...}" />
+            <marker date="1538993162288" expanded="true" signature="83:188" ph="{...}" />
+            <marker date="1538993162288" expanded="true" signature="98:182" ph="/* Create ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Core/DomainService/ISpeakerRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding>
+            <marker date="1538993200094" expanded="true" signature="43:200" ph="{...}" />
+            <marker date="1538993200094" expanded="true" signature="85:198" ph="{...}" />
+            <marker date="1538993200094" expanded="true" signature="134:192" ph="/* Read ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpeakerShopApp.Core/ApplicationService/Service/IBrandService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <marker date="1538993237166" expanded="true" signature="91:260" ph="{...}" />
+            <marker date="1538993237166" expanded="true" signature="128:258" ph="{...}" />
+            <marker date="1538993237166" expanded="true" signature="226:252" ph="/* Update ... */" />
           </folding>
         </state>
       </provider>

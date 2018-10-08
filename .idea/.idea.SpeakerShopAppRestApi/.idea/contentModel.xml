@@ -11,9 +11,16 @@
       <e p="SpeakerShopApp.Core" t="IncludeRecursive">
         <e p="ApplicationService" t="Include">
           <e p="Impl" t="Include" />
+          <e p="Service" t="Include">
+            <e p="IBrandService.cs" t="Include" />
+            <e p="ISpeakerService.cs" t="Include" />
+          </e>
         </e>
         <e p="bin" t="ExcludeRecursive" />
-        <e p="DomainService" t="Include" />
+        <e p="DomainService" t="Include">
+          <e p="IBrandRepository.cs" t="Include" />
+          <e p="ISpeakerRepository.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
@@ -25,6 +32,7 @@
       </e>
       <e p="SpeakerShopApp.Core.Entity" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Brand.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
@@ -32,7 +40,19 @@
             </e>
           </e>
         </e>
+        <e p="Speaker.cs" t="Include" />
         <e p="SpeakerShopApp.Core.Entity.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="SpeakerShopApp.Infrastructure.Data" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="SpeakerShopApp.Infrastructure.Data.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="SpeakerShopApp.Infrastructure.Data.csproj" t="IncludeRecursive" />
       </e>
       <e p="SpeakerShopAppRestApi" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
