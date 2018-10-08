@@ -1,5 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeakerShopAppRestApi", "SpeakerShopAppRestApi\SpeakerShopAppRestApi.csproj", "{C70EA7AD-E759-48E9-9930-A89C2590951E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{19695C08-90A0-45E9-B70A-12C72A423166}"
@@ -13,6 +14,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{6C878E46-8A15-485D-8D44-59B9E3D98D3D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeakerShopApp.Infrastructure.Data", "SpeakerShopApp.Infrastructure.Data\SpeakerShopApp.Infrastructure.Data.csproj", "{02C9AFFF-F5F7-4C80-AAD2-CBD60164B77A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCore", "TestCore\TestCore.csproj", "{C72ABF07-0626-4AF3-9379-29D40E33B757}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +39,10 @@ Global
 		{02C9AFFF-F5F7-4C80-AAD2-CBD60164B77A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02C9AFFF-F5F7-4C80-AAD2-CBD60164B77A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02C9AFFF-F5F7-4C80-AAD2-CBD60164B77A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C72ABF07-0626-4AF3-9379-29D40E33B757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C72ABF07-0626-4AF3-9379-29D40E33B757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C72ABF07-0626-4AF3-9379-29D40E33B757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C72ABF07-0626-4AF3-9379-29D40E33B757}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C70EA7AD-E759-48E9-9930-A89C2590951E} = {31F2ADCB-1823-4BB1-9741-40E5E4F29CC5}

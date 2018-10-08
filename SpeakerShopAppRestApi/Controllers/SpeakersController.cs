@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SpeakerShopApp.Core.ApplicationService.Service;
+using SpeakerShopApp.Core.Entity;
 
 namespace SpeakerShopAppRestApi.Controllers
 {
@@ -20,12 +21,11 @@ namespace SpeakerShopAppRestApi.Controllers
             _speakerService = speakerService;
         }
 
-
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<Speaker>> Get()
         {
-            return new string[] {"value1", "value2"};
+            return _speakerService.ReadAllSpeakers();
         }
 
         // GET api/values/5
