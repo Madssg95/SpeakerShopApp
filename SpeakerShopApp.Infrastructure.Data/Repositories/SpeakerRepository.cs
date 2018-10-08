@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using SpeakerShopApp.Core.DomainService;
 using SpeakerShopApp.Core.Entity;
 
@@ -7,29 +9,47 @@ namespace SpeakerShopApp.Infrastructure.Data.Repositories
 {
     public class SpeakerRepository : ISpeakerRepository
     {
+
+        readonly SpeakerShopAppContext _ctx;
+
+        public SpeakerRepository(SpeakerShopAppContext ctx)
+        {
+            _ctx = ctx;
+        }
+
+
         public Speaker CreateSpeaker(Speaker speaker)
         {
-            throw new NotImplementedException();
+            _ctx.Speakers.Attach(speaker).State = EntityState.Added;
+            _ctx.SaveChanges();
+            return speaker;
         }
 
         public Speaker DeleteSpeaker(int id)
         {
-            throw new NotImplementedException();
+            //Attatch ??? 
+            var speakerRemoved = _ctx.Remove(new Speaker { SpeakerId = id }).Entity;
+            _ctx.SaveChanges();
+            return speakerRemoved;
         }
 
         public IEnumerable<Speaker> ReadAllSpeakers()
         {
-            throw new NotImplementedException();
+            return _ctx.Speakers;
         }
 
         public Speaker ReadSpeakerById(int id)
         {
-            throw new NotImplementedException();
+            return _ctx.Speakers
+              .FirstOrDefault(s => s.SpeakerId == id);
+                       
         }
 
         public Speaker UpdateSpeaker(Speaker speakerUpdate)
         {
-            throw new NotImplementedException();
+            _ctx.Attach(speakerUpdate).State = EntityState.Modified;
+            _ctx.SaveChanges();
+            return speakerUpdate;
         }
     }
 }
