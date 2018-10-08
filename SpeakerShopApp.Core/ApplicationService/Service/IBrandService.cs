@@ -10,7 +10,8 @@ namespace SpeakerShopApp.Core.ApplicationService.Service
 
         //Read
         Brand ReadBrandById(int id);
-        List<Brand> ReadAllBrands();
+        List<Brand> ReadAllBrands(Filter filter);
+        Brand ReadBrandByIdIncludeSpeakers(int id);
 
         //Update
         Brand UpdateBrand(Brand brand);

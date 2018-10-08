@@ -16,7 +16,12 @@ namespace SpeakerShopApp.Core.ApplicationService.Impl
             throw new System.NotImplementedException();
         }
 
-        public List<Brand> ReadAllBrands()
+        public List<Brand> ReadAllBrands(Filter filter)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Brand ReadBrandByIdIncludeSpeakers(int id)
         {
             throw new System.NotImplementedException();
         }
