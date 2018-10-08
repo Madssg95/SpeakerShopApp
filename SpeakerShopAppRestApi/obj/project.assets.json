@@ -11534,35 +11534,37 @@
     ]
   },
   "packageFolders": {
-    "/Users/morten/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\madsg\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/morten/Documents/GitHub/SpeakerShopApp/SpeakerShopAppRestApi/SpeakerShopAppRestApi.csproj",
+      "projectUniqueName": "C:\\Users\\madsg\\source\\repos\\SpeakerShopAppRestApi\\SpeakerShopAppRestApi\\SpeakerShopAppRestApi.csproj",
       "projectName": "SpeakerShopAppRestApi",
-      "projectPath": "/Users/morten/Documents/GitHub/SpeakerShopApp/SpeakerShopAppRestApi/SpeakerShopAppRestApi.csproj",
-      "packagesPath": "/Users/morten/.nuget/packages/",
-      "outputPath": "/Users/morten/Documents/GitHub/SpeakerShopApp/SpeakerShopAppRestApi/obj",
+      "projectPath": "C:\\Users\\madsg\\source\\repos\\SpeakerShopAppRestApi\\SpeakerShopAppRestApi\\SpeakerShopAppRestApi.csproj",
+      "packagesPath": "C:\\Users\\madsg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\madsg\\source\\repos\\SpeakerShopAppRestApi\\SpeakerShopAppRestApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/morten/.config/NuGet/NuGet.Config"
+        "C:\\Users\\madsg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "/Users/morten/Documents/GitHub/SpeakerShopApp/SpeakerShopApp.Core/SpeakerShopApp.Core.csproj": {
-              "projectPath": "/Users/morten/Documents/GitHub/SpeakerShopApp/SpeakerShopApp.Core/SpeakerShopApp.Core.csproj"
+            "C:\\Users\\madsg\\source\\repos\\SpeakerShopAppRestApi\\SpeakerShopApp.Core\\SpeakerShopApp.Core.csproj": {
+              "projectPath": "C:\\Users\\madsg\\source\\repos\\SpeakerShopAppRestApi\\SpeakerShopApp.Core\\SpeakerShopApp.Core.csproj"
             }
           }
         }
@@ -11576,16 +11578,17 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "2.1",
-            "autoReferenced": true
-          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.1.1"
+            "version": "[2.1.1, )",
+            "autoReferenced": true
+          },
+          "Microsoft.NETCore.App": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.1.0, )",
+            "autoReferenced": true
           }
         },
         "imports": [

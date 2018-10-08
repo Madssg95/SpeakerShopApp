@@ -1,20 +1,24 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/morten/Documents/GitHub/SpeakerShopApp/SpeakerShopAppRestApi/SpeakerShopAppRestApi.csproj",
+    "projectUniqueName": "C:\\Users\\madsg\\source\\repos\\SpeakerShopAppRestApi\\SpeakerShopAppRestApi\\SpeakerShopAppRestApi.csproj",
     "projectName": "SpeakerShopAppRestApi",
-    "projectPath": "/Users/morten/Documents/GitHub/SpeakerShopApp/SpeakerShopAppRestApi/SpeakerShopAppRestApi.csproj",
-    "outputPath": "/Users/morten/Documents/GitHub/SpeakerShopApp/SpeakerShopAppRestApi/obj/",
+    "projectPath": "C:\\Users\\madsg\\source\\repos\\SpeakerShopAppRestApi\\SpeakerShopAppRestApi\\SpeakerShopAppRestApi.csproj",
+    "outputPath": "C:\\Users\\madsg\\source\\repos\\SpeakerShopAppRestApi\\SpeakerShopAppRestApi\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netcoreapp2.1"
     ],
     "frameworks": {
       "netcoreapp2.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\madsg\\source\\repos\\SpeakerShopAppRestApi\\SpeakerShopApp.Core\\SpeakerShopApp.Core.csproj": {
+            "projectPath": "C:\\Users\\madsg\\source\\repos\\SpeakerShopAppRestApi\\SpeakerShopApp.Core\\SpeakerShopApp.Core.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
