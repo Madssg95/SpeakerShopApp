@@ -30,15 +30,17 @@ namespace SpeakerShopAppRestApi.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ActionResult<Speaker> Get(int id)
         {
-            return "value";
+            if (id < 1) return BadRequest("Id must be greater than 0");
+            return _speakerService.ReadSpeakerById(id);
         }
 
         // POST api/values
         [HttpPost]
         public void Post([FromBody] string value)
         {
+            
         }
 
         // PUT api/values/5
