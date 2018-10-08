@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bae0756-d4d3-4d92-966e-13035eda17b0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SpeakerShopAppRestApi/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SpeakerShopAppRestApi/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/Debug/netcoreapp2.1/SpeakerShopAppRestApi.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/Debug/netcoreapp2.1/SpeakerShopAppRestApi.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/Debug/netcoreapp2.1/SpeakerShopAppRestApi.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/Debug/netcoreapp2.1/SpeakerShopAppRestApi.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/SpeakerShopAppRestApi.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/SpeakerShopAppRestApi.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/SpeakerShopAppRestApi.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/SpeakerShopAppRestApi.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SpeakerShopAppRestApi/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +48,13 @@
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.js.language.service.starts" />
+    </session>
+    <session id="1958679330">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+        </counts>
+      </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
@@ -121,7 +133,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="8" />
     <option name="y" value="23" />
     <option name="width" value="1432" />
@@ -995,8 +1007,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="23" width="1432" height="832" extended-state="1" />
-    <editor active="true" />
+    <frame x="8" y="23" width="1432" height="832" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532374" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
