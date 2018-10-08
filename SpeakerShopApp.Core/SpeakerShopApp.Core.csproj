@@ -5,10 +5,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="ApplicationService\Impl" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\SpeakerShopApp.Core.Entity\SpeakerShopApp.Core.Entity.csproj" />
     </ItemGroup>
 </Project>
