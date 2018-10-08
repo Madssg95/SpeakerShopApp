@@ -4,4 +4,10 @@
         <TargetFramework>netcoreapp2.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Repositories\" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\SpeakerShopApp.Core\SpeakerShopApp.Core.csproj" />
+    </ItemGroup>
 </Project>

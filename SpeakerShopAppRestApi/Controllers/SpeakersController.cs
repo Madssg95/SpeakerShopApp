@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using SpeakerShopApp.Core.ApplicationService.Service;
 
 namespace SpeakerShopAppRestApi.Controllers
 {
@@ -10,6 +11,16 @@ namespace SpeakerShopAppRestApi.Controllers
     [ApiController]
     public class SpeakersController : ControllerBase
     {
+
+        private readonly ISpeakerService _speakerService;
+
+
+        public SpeakersController(ISpeakerService speakerService)
+        {
+            _speakerService = speakerService;
+        }
+
+
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()

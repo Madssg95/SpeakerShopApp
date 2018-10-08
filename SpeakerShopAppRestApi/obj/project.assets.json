@@ -4333,6 +4333,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "SpeakerShopApp.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "SpeakerShopApp.Core.Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SpeakerShopApp.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SpeakerShopApp.Core.dll": {}
+        }
+      },
+      "SpeakerShopApp.Core.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/SpeakerShopApp.Core.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SpeakerShopApp.Core.Entity.dll": {}
+        }
       }
     }
   },
@@ -11491,12 +11514,23 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "SpeakerShopApp.Core/1.0.0": {
+      "type": "project",
+      "path": "../SpeakerShopApp.Core/SpeakerShopApp.Core.csproj",
+      "msbuildProject": "../SpeakerShopApp.Core/SpeakerShopApp.Core.csproj"
+    },
+    "SpeakerShopApp.Core.Entity/1.0.0": {
+      "type": "project",
+      "path": "../SpeakerShopApp.Core.Entity/SpeakerShopApp.Core.Entity.csproj",
+      "msbuildProject": "../SpeakerShopApp.Core.Entity/SpeakerShopApp.Core.Entity.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "SpeakerShopApp.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -11526,7 +11560,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/morten/Documents/GitHub/SpeakerShopApp/SpeakerShopApp.Core/SpeakerShopApp.Core.csproj": {
+              "projectPath": "/Users/morten/Documents/GitHub/SpeakerShopApp/SpeakerShopApp.Core/SpeakerShopApp.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,13 +1,13 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\madsg\\source\\repos\\SpeakerShopAppRestApi\\SpeakerShopAppRestApi\\SpeakerShopAppRestApi.csproj",
+    "projectUniqueName": "/Users/morten/Documents/GitHub/SpeakerShopApp/SpeakerShopAppRestApi/SpeakerShopAppRestApi.csproj",
     "projectName": "SpeakerShopAppRestApi",
-    "projectPath": "C:\\Users\\madsg\\source\\repos\\SpeakerShopAppRestApi\\SpeakerShopAppRestApi\\SpeakerShopAppRestApi.csproj",
-    "outputPath": "C:\\Users\\madsg\\source\\repos\\SpeakerShopAppRestApi\\SpeakerShopAppRestApi\\obj\\",
+    "projectPath": "/Users/morten/Documents/GitHub/SpeakerShopApp/SpeakerShopAppRestApi/SpeakerShopAppRestApi.csproj",
+    "outputPath": "/Users/morten/Documents/GitHub/SpeakerShopApp/SpeakerShopAppRestApi/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netcoreapp2.1"
