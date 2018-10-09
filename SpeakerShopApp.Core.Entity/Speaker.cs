@@ -14,6 +14,8 @@ namespace SpeakerShopApp.Core.Entity
         public string Color { get; set; }
 
         public Brand SpeakerBrand { get; set; }
+
+        public string Url { get; set; }
     }
 
 }
