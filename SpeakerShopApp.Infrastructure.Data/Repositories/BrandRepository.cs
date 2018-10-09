@@ -35,7 +35,7 @@ namespace SpeakerShopApp.Infrastructure.Data.Repositories
             return _ctx.Brands.Include(b => b.Speakers).FirstOrDefault(b => b.BrandId == id);
         }
 
-        public IEnumerable<Brand> ReadAllBrands()
+        public IEnumerable<Brand> ReadAllBrands(Filter filter)
         {
             return _ctx.Brands;
         }
