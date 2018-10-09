@@ -63,6 +63,15 @@ namespace SpeakerShopApp.Core.ApplicationService.Impl
             return _speakerRepository.ReadAllSpeakers(filter).ToList();
         }
 
+        public Speaker ReadSpeakerByIdIncludeBrand(int id)
+        {
+            if (id <= 0)
+            {
+                throw new InvalidDataException("The entered speaker ID is invalid");
+            }
+            return _speakerRepository.ReadSpeakerByIdIncludeBrand(id);
+        }
+
         public Speaker UpdateSpeaker(Speaker speaker)
         {
             if (_speakerRepository.ReadSpeakerById(speaker.SpeakerId) == null)

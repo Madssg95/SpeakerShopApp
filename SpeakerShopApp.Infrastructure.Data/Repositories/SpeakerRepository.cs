@@ -38,6 +38,11 @@ namespace SpeakerShopApp.Infrastructure.Data.Repositories
             return _ctx.Speakers;
         }
 
+        public Speaker ReadSpeakerByIdIncludeBrand(int id)
+        {
+            return _ctx.Speakers.Include(s => s.SpeakerBrand).FirstOrDefault(s => s.SpeakerId == id);
+        }
+
         public Speaker ReadSpeakerById(int id)
         {
             return _ctx.Speakers

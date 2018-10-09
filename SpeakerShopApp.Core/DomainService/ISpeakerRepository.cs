@@ -10,7 +10,7 @@ namespace SpeakerShopApp.Core.DomainService
 
         //Read
         IEnumerable<Speaker> ReadAllSpeakers(Filter filter);
-
+        Speaker ReadSpeakerByIdIncludeBrand(int id);
         Speaker ReadSpeakerById(int id);
 
         //Update
