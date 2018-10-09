@@ -47,10 +47,6 @@ namespace SpeakerShopAppRestApi.Controllers
             {
                 return BadRequest(e.Message);
             }
-
-            
-
-           
         }
 
         // POST api/values
