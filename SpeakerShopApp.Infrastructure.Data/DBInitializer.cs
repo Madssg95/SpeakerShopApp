@@ -68,7 +68,7 @@ namespace SpeakerShopApp.Infrastructure.Data
                 SpeakerBrand = Sonos
             }).Entity;
 
-
+            ctx.SaveChanges();
 
           
         }

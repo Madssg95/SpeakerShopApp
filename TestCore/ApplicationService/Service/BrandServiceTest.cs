@@ -13,7 +13,6 @@ namespace TestCore.ApplicationService.Service
 {
     public class BrandServiceTest
     {
-        
         [Fact]
         public void CreateBrandWithMissingSpeakerBrandThrowsException()
         {

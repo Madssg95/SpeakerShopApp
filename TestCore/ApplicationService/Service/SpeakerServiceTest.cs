@@ -414,7 +414,6 @@ namespace TestCore.ApplicationService.Service
 
             speakerRepo.Setup(x => x.DeleteSpeaker(speaker.SpeakerId)).Callback(() => isCalled = true);
             speakerService.DeleteSpeaker(speaker.SpeakerId);
-
             Assert.True(isCalled);
         }
 
