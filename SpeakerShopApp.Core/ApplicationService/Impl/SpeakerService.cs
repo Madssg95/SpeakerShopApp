@@ -56,7 +56,7 @@ namespace SpeakerShopApp.Core.ApplicationService.Impl
 
         public List<Speaker> ReadAllSpeakers(Filter filter)
         {
-            if (filter.CurrentPage <0 || filter.ItemsPrPage <= 0 )
+            if (filter.CurrentPage < 0 || filter.ItemsPrPage < 0 )
             {
                 throw new InvalidDataException("The entered paging is invalid");
             }
