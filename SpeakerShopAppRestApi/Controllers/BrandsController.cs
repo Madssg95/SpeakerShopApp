@@ -23,7 +23,7 @@ namespace SpeakerShopAppRestApi.Controllers
 
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<Brand>> Get(Filter filter)
+        public ActionResult<IEnumerable<Brand>> Get([FromQuery] Filter filter)
         {
             try
             {
