@@ -9,7 +9,7 @@ namespace SpeakerShopApp.Core.DomainService
         Speaker CreateSpeaker(Speaker speaker);
 
         //Read
-        IEnumerable<Speaker> ReadAllSpeakers();
+        IEnumerable<Speaker> ReadAllSpeakers(Filter filter);
 
         Speaker ReadSpeakerById(int id);
 

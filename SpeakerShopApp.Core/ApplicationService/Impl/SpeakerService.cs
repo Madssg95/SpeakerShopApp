@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using SpeakerShopApp.Core.ApplicationService.Service;
 using SpeakerShopApp.Core.DomainService;
 using SpeakerShopApp.Core.Entity;
@@ -41,29 +42,44 @@ namespace SpeakerShopApp.Core.ApplicationService.Impl
             {
                 throw new InvalidDataException("Can not create a speaker without a speaker brand");
             }
-
-
             return _speakerRepository.CreateSpeaker(speaker);
         }
 
         public Speaker ReadSpeakerById(int id)
         {
-            throw new System.NotImplementedException();
+            if (id <= 0)
+            {
+                throw new InvalidDataException("The entered speaker ID is invalid");
+            }
+            return _speakerRepository.ReadSpeakerById(id);
         }
 
         public List<Speaker> ReadAllSpeakers(Filter filter)
         {
-            throw new System.NotImplementedException();
+            if (filter.CurrentPage <=0 || filter.ItemsPrPage <= 0 )
+            {
+                throw new InvalidDataException("The entered paging is invalid");
+            }
+            return _speakerRepository.ReadAllSpeakers(filter).ToList();
         }
 
         public Speaker UpdateSpeaker(Speaker speaker)
         {
-            throw new System.NotImplementedException();
+            if (_speakerRepository.ReadSpeakerById(speaker.SpeakerId) == null)
+            {
+                throw new InvalidDataException("Can not read speaker with no brand");
+            }
+            return _speakerRepository.UpdateSpeaker(speaker);
         }
 
         public Speaker DeleteSpeaker(int id)
         {
-            throw new System.NotImplementedException();
+            if (_speakerRepository.ReadSpeakerById(id) == null)
+            {
+                throw new InvalidDataException("Can not find speaker to delete");
+            }
+            return _speakerRepository.DeleteSpeaker(id);
+            //throw new System.Exception();
         }
     }
 }
