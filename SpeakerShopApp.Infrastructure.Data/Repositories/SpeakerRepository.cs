@@ -33,7 +33,7 @@ namespace SpeakerShopApp.Infrastructure.Data.Repositories
             return speakerRemoved;
         }
 
-        public IEnumerable<Speaker> ReadAllSpeakers()
+        public IEnumerable<Speaker> ReadAllSpeakers(Filter filter)
         {
             return _ctx.Speakers;
         }
