@@ -39,12 +39,16 @@ namespace SpeakerShopAppRestApi.Controllers
         [HttpGet("{id}")]
         public ActionResult<Speaker> Get(int id)
         {
-            if (id <= 0 )
+            try
             {
-                return BadRequest("Id skal være over 0");
+                return Ok(_speakerService.ReadSpeakerByIdIncludeBrand(id));
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
             }
 
-            return Ok(_speakerService.ReadSpeakerById(id));
+            
 
            
         }
@@ -53,23 +57,15 @@ namespace SpeakerShopAppRestApi.Controllers
         [HttpPost]
         public ActionResult<Speaker> Post([FromBody] Speaker speaker)
         {
-            if (string.IsNullOrEmpty(speaker.SpeakerName))
+            try
             {
-                return BadRequest("Remember to enter a name!");
+                return Ok(_speakerService.CreateSpeaker(speaker));
             }
-            if (speaker.Price<0)
+            catch (Exception e)
             {
-                return BadRequest("Remember to enter a price!");
+                return BadRequest(e.Message);
             }
-            if (string.IsNullOrEmpty(speaker.Color))
-            {
-                return BadRequest("Remember to enter a color!");
-            }
-            if (string.IsNullOrEmpty(speaker.SpeakerDescription))
-            {
-                return BadRequest("Remember to enter a description!");
-            }
-            return _speakerService.CreateSpeaker(speaker);
+            
 
         }
 
