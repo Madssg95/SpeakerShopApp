@@ -21,21 +21,43 @@ namespace SpeakerShopAppRestApi
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        private IConfiguration _conf { get; }
+        private IHostingEnvironment _env { get; set; }
+
+
+        public Startup(IConfiguration conf, IHostingEnvironment env)
         {
-            Configuration = configuration;
+            _env = env;
+            _conf = conf;
+
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+                .AddEnvironmentVariables();
+                _conf = builder.Build();
+
+
+
         }
 
-        public IConfiguration Configuration { get; }
-
+       
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Add CORS
+            services.AddCors();
 
-            services.AddDbContext<SpeakerShopAppContext>(
+            if (_env.IsDevelopment())
+            {
+                services.AddDbContext<SpeakerShopAppContext>(
                 opt => opt.UseSqlite("Data Source= SpeakerShop.db"));
-
-
+            }
+            else if (_env.IsProduction())
+            {
+                services.AddDbContext<SpeakerShopAppContext>(
+                    opt => opt.UseSqlServer(_conf.GetConnectionString("defaultConnection")));
+            }
             services.AddScoped<IBrandRepository, BrandRepository>();
             services.AddScoped<ISpeakerRepository, SpeakerRepository>();
             services.AddScoped<ISpeakerService, SpeakerService>();
@@ -59,13 +81,20 @@ namespace SpeakerShopAppRestApi
                 using (var scope = app.ApplicationServices.CreateScope())
                 {
                     var ctx = scope.ServiceProvider.GetService<SpeakerShopAppContext>();
+
                     DBInitializer.SeedDB(ctx);
                 }
             }
             else
             {
+                using (var scope = app.ApplicationServices.CreateScope())
+                {
+                    var ctx = scope.ServiceProvider.GetService<SpeakerShopAppContext>();
+                    ctx.Database.EnsureCreated();
+                }
                 app.UseHsts();
             }
+            app.UseCors(b => b.WithOrigins("http://localhost:5001").AllowAnyMethod());
 
             app.UseHttpsRedirection();
             app.UseMvc();
