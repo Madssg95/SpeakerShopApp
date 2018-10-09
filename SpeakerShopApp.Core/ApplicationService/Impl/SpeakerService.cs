@@ -88,7 +88,6 @@ namespace SpeakerShopApp.Core.ApplicationService.Impl
                 throw new InvalidDataException("Can not find speaker to delete");
             }
             return _speakerRepository.DeleteSpeaker(id);
-            //throw new System.Exception();
         }
     }
 }
