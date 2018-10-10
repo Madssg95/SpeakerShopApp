@@ -50,6 +50,7 @@ namespace SpeakerShopApp.Core.ApplicationService.Impl
             {
                 throw new Exception("Please enter values that are at least 0");
             }
+            
             return _brandRepository.ReadAllBrands(filter).ToList();
         }
 

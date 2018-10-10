@@ -37,7 +37,11 @@ namespace SpeakerShopApp.Infrastructure.Data.Repositories
 
         public IEnumerable<Brand> ReadAllBrands(Filter filter)
         {
-            return _ctx.Brands;
+            if (filter.CurrentPage == 0 && filter.ItemsPrPage == 0)
+            {
+                return _ctx.Brands;
+            }
+            return _ctx.Brands.Skip((filter.CurrentPage - 1) * filter.ItemsPrPage).Take(filter.ItemsPrPage);
         }
 
         public Brand ReadBrandById(int id)

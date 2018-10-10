@@ -35,7 +35,12 @@ namespace SpeakerShopApp.Infrastructure.Data.Repositories
 
         public IEnumerable<Speaker> ReadAllSpeakers(Filter filter)
         {
-            return _ctx.Speakers;
+            if (filter.CurrentPage == 0 && filter.ItemsPrPage == 0)
+            {
+                return _ctx.Speakers;
+            }
+            
+            return _ctx.Speakers.Skip((filter.CurrentPage - 1) * filter.ItemsPrPage).Take(filter.ItemsPrPage);
         }
 
         public Speaker ReadSpeakerByIdIncludeBrand(int id)
@@ -48,6 +53,11 @@ namespace SpeakerShopApp.Infrastructure.Data.Repositories
             return _ctx.Speakers
               .FirstOrDefault(s => s.SpeakerId == id);
                        
+        }
+
+        public int Count()
+        {
+            return _ctx.Speakers.Count();
         }
 
         public Speaker UpdateSpeaker(Speaker speakerUpdate)

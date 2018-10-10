@@ -59,13 +59,14 @@ namespace TestCore.ApplicationService.Service
                                               
          var brand = new Brand()
          {
+           BrandId  = 1,
            SpeakerBrand = "Bose"
          };
                                               
          var isCalled = false;
-         brandRepo.Setup(x => x.ReadBrandById(It.IsAny<int>())).Callback(() => isCalled = true);
+         brandRepo.Setup(x => x.ReadBrandById(It.IsAny<int>())).Callback(() => isCalled = true).Returns(new Brand(){BrandId = 1});
                                   
-         brandService.ReadBrandById(It.IsAny<int>());
+         brandService.ReadBrandById(brand.BrandId);
          Assert.True(isCalled);
         }
 

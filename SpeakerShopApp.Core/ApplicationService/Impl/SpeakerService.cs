@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -64,6 +65,12 @@ namespace SpeakerShopApp.Core.ApplicationService.Impl
             {
                 throw new InvalidDataException("The entered paging is invalid");
             }
+            
+            if (((filter.CurrentPage -1) * filter.ItemsPrPage) > _speakerRepository.Count()) 
+            {
+                throw new Exception("The current page you have selected is to high.");
+            }
+            
             return _speakerRepository.ReadAllSpeakers(filter).ToList();
         }
 
