@@ -124,31 +124,6 @@ namespace TestCore.ApplicationService.Service
             Assert.Equal("Can not create a speaker without a color", exception.Message);
         }
 
-
-
-        [Fact]
-        public void CannotCreateSpeakerWithoutASpeakerBrandException()
-        {
-            var speakerRepo = new Mock<ISpeakerRepository>();
-            var brandRepo = new Mock<IBrandRepository>();
-
-
-            ISpeakerService speakerService = new SpeakerService(speakerRepo.Object, brandRepo.Object);
-
-            var speaker = new Speaker()
-            {
-                SpeakerName = "Speaker Name",
-                Price = 1234,
-                SpeakerDescription = "Test",
-                Color ="Blue"
-            };
-
-            Exception exception = Assert.Throws<InvalidDataException>(() =>
-                         speakerService.CreateSpeaker(speaker));
-
-            Assert.Equal("Can not create a speaker without a speaker brand", exception.Message);
-        }
-
         [Fact]
         public void ReadByIdIsBelowZero()
         {
