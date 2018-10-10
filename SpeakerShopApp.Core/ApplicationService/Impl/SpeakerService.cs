@@ -38,6 +38,11 @@ namespace SpeakerShopApp.Core.ApplicationService.Impl
             {
                 throw new InvalidDataException("Can not create a speaker without a color");
             }
+
+            if (string.IsNullOrEmpty(speaker.Brand))
+            {
+                throw new InvalidDataException("Can not create a speaker without a brand");
+            }
             
             else if (string.IsNullOrEmpty(speaker.Url))
             {
