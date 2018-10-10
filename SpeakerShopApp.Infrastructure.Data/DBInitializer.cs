@@ -38,7 +38,8 @@ namespace SpeakerShopApp.Infrastructure.Data
                 SpeakerDescription = "Test",
                 Color = "Sort",
                 Price = 2123,
-                SpeakerBrand = bose
+                SpeakerBrand = bose,
+                Url = "test"
             }).Entity;
 
             var speaker2 = ctx.Speakers.Add(new Speaker()
@@ -47,7 +48,8 @@ namespace SpeakerShopApp.Infrastructure.Data
                 SpeakerDescription = "Testt",
                 Color = "Sort",
                 Price = 2123,
-                SpeakerBrand = jbl
+                SpeakerBrand = jbl,
+                Url = "test"
             }).Entity;
 
             var speaker3 = ctx.Speakers.Add(new Speaker()
@@ -56,7 +58,8 @@ namespace SpeakerShopApp.Infrastructure.Data
                 SpeakerDescription = "Testtt",
                 Color = "Sort",
                 Price = 9999,
-                SpeakerBrand = BangOgOlufsen
+                SpeakerBrand = BangOgOlufsen,
+                Url = "test"
             }).Entity;
 
             var speaker4 = ctx.Speakers.Add(new Speaker()
@@ -65,7 +68,8 @@ namespace SpeakerShopApp.Infrastructure.Data
                 SpeakerDescription = "Testtt",
                 Color = "Sort",
                 Price = 123123,
-                SpeakerBrand = Sonos
+                SpeakerBrand = Sonos,
+                Url = "test"
             }).Entity;
 
             ctx.SaveChanges();
