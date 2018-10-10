@@ -94,7 +94,7 @@ namespace SpeakerShopAppRestApi
                 }
                 app.UseHsts();
             }
-            app.UseCors(b => b.WithOrigins("http://localhost:5001").AllowAnyMethod());
+            app.UseCors(b => b.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             app.UseHttpsRedirection();
             app.UseMvc();
