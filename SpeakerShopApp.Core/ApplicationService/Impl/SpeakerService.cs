@@ -87,19 +87,26 @@ namespace SpeakerShopApp.Core.ApplicationService.Impl
 
         public Speaker UpdateSpeaker(Speaker speaker)
         {
-            if (_speakerRepository.ReadSpeakerById(speaker.SpeakerId) == null)
+            var updateSpeaker = _speakerRepository.ReadSpeakerById(speaker.SpeakerId);
+            
+            if ( updateSpeaker == null)
             {
                 throw new InvalidDataException("Can not read speaker with no brand");
             }
-            return _speakerRepository.UpdateSpeaker(speaker);
+
+            updateSpeaker.SpeakerName = speaker.SpeakerName;
+            updateSpeaker.SpeakerDescription = speaker.SpeakerDescription;
+            updateSpeaker.SpeakerBrand = speaker.SpeakerBrand;
+            updateSpeaker.Price = speaker.Price;
+            updateSpeaker.Color = speaker.Color;
+            updateSpeaker.Url = speaker.Url;
+            updateSpeaker.Brand = speaker.Brand;
+            
+            return _speakerRepository.UpdateSpeaker(updateSpeaker);
         }
 
         public Speaker DeleteSpeaker(int id)
         {
-            if (_speakerRepository.ReadSpeakerById(id) == null)
-            {
-                throw new InvalidDataException("Can not find speaker to delete");
-            }
             return _speakerRepository.DeleteSpeaker(id);
         }
     }

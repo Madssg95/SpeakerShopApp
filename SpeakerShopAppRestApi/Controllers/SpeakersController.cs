@@ -69,24 +69,30 @@ namespace SpeakerShopAppRestApi.Controllers
         [HttpPut("{id}")]
         public ActionResult<Speaker> Put(int id, [FromBody] Speaker speaker)
         {
-            if (id < 1 || id != speaker.SpeakerId)
+            try
             {
-                return BadRequest("Id passer ikke!");
+                return Ok(_speakerService.UpdateSpeaker(speaker));
             }
-
-            return Ok(_speakerService.UpdateSpeaker(speaker));
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+                
         }
+
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
         public ActionResult<Speaker> Delete(int id)
         {
-            Speaker speaker = _speakerService.DeleteSpeaker(id);
-            if (speaker == null)
+            try
             {
-                return StatusCode(404, "Kunne ikke finde speaker med id:" + id);
+                return Ok(_speakerService.DeleteSpeaker(id));
             }
-            return Ok($"Speaker with Id: {id} is Deleted");
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
     }
 }

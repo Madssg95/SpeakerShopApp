@@ -283,7 +283,7 @@ namespace TestCore.ApplicationService.Service
 
             });
 
-            speakerRepo.Setup(x => x.UpdateSpeaker(speaker)).Callback(() => isCalled = true);
+            speakerRepo.Setup(x => x.UpdateSpeaker(It.IsAny<Speaker>())).Callback(() => isCalled = true);
             speakerService.UpdateSpeaker(speaker);
 
             Assert.True(isCalled);
@@ -313,37 +313,6 @@ namespace TestCore.ApplicationService.Service
 
             Assert.Equal("Can not read speaker with no brand", e.Message);
         }
-
-
-
-        [Fact]
-        public void CantFindSpeakerToDeleteThrowException()
-        {
-            var brandRepo = new Mock<IBrandRepository>();
-            var speakerRepo = new Mock<ISpeakerRepository>();
-
-            ISpeakerService speakerService = new SpeakerService(speakerRepo.Object, brandRepo.Object);
-
-            var speaker = new Speaker()
-            {
-                SpeakerId = 1,
-                SpeakerName = "test",
-                SpeakerDescription = "test",
-                Price = 111,
-                Color = "test",
-                SpeakerBrand = new Brand()
-                {
-                    SpeakerBrand = "Bose"
-                }
-            };
-
-            speakerRepo.Setup(x => x.DeleteSpeaker(It.IsAny<int>())).Callback(() => speaker = null);
-
-            var e = Assert.Throws<InvalidDataException>(() => speakerService.DeleteSpeaker(speaker.SpeakerId));
-
-            Assert.Equal("Can not find speaker to delete", e.Message);
-        }
-
 
 
         [Fact]

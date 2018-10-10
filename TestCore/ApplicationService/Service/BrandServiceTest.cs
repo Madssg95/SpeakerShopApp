@@ -197,6 +197,7 @@ namespace TestCore.ApplicationService.Service
             Assert.Equal("Enter an Id that is at least 1", e.Message);
         }
 
+        /*
         [Fact]
         public void ReadBrandByIdIncludeSpeakersWithNoSpeakerFoundThrowException()
         {
@@ -215,8 +216,9 @@ namespace TestCore.ApplicationService.Service
 
             var e = Assert.Throws<Exception>(() => brandService.ReadBrandById(brand.BrandId));
             
-            Assert.Equal("Could not find any User with the entered id", e.Message);
+            Assert.Equal("Could not find any brand with the entered id", e.Message);
         }
+        */
 
         [Fact]
         public void UpdateBrandWithNoBrandFoundThrowException()
@@ -236,7 +238,7 @@ namespace TestCore.ApplicationService.Service
 
             var e = Assert.Throws<Exception>(() => brandService.UpdateBrand(brand));
             
-            Assert.Equal("Could not find any User with the entered id", e.Message);
+            Assert.Equal("Could not find any brand with the entered id", e.Message);
         }
 
         [Fact]
@@ -259,31 +261,11 @@ namespace TestCore.ApplicationService.Service
                 BrandId = 1,
                 SpeakerBrand = "Bose"
             });
-            brandRepo.Setup(x => x.UpdateBrand(brand)).Callback(() => isCalled = true);
+            brandRepo.Setup(x => x.UpdateBrand(It.IsAny<Brand>())).Callback(() => isCalled = true);
             brandService.UpdateBrand(brand);
             Assert.True(isCalled);
         }
 
-        [Fact]
-        public void DeleteBrandWithNoBrandFoundThrowException()
-        {
-            var brandRepo = new Mock<IBrandRepository>();
-            var speakerRepo = new Mock<ISpeakerRepository>();
-
-            IBrandService brandService = new BrandService(brandRepo.Object, speakerRepo.Object);
-
-            var brand = new Brand()
-            {
-                BrandId = 1,
-                SpeakerBrand = "Bose"
-            };
-
-            brandRepo.Setup(x => x.DeleteBrand(It.IsAny<int>())).Callback(() => brand = null);
-
-            var e = Assert.Throws<Exception>(() => brandService.DeleteBrand(brand.BrandId));
-            
-            Assert.Equal("The brand could not be found", e.Message);
-        }
 
         [Fact]
         public void DeleteBrandSecureRepoIsCalled()

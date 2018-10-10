@@ -63,7 +63,7 @@ namespace SpeakerShopApp.Core.ApplicationService.Impl
 
             if (_brandRepository.ReadBrandByIdIncludeSpeakers(id) == null)
             {
-                throw new Exception("Could not find any User with the entered id");
+                throw new Exception("Could not find any brand with the entered id");
             }
 
             return _brandRepository.ReadBrandByIdIncludeSpeakers(id);
@@ -72,21 +72,21 @@ namespace SpeakerShopApp.Core.ApplicationService.Impl
 
         public Brand UpdateBrand(Brand brand)
         {
-            if (_brandRepository.ReadBrandById(brand.BrandId) == null)
+            var updateBrand = _brandRepository.ReadBrandById(brand.BrandId);
+            
+            if ( updateBrand == null)
             {
-                throw new Exception("Could not find any User with the entered id");
+                throw new Exception("Could not find any brand with the entered id");
             }
 
-            return _brandRepository.UpdateBrand(brand);
+            updateBrand.SpeakerBrand = brand.SpeakerBrand;
+            updateBrand.Speakers = brand.Speakers;
+
+            return _brandRepository.UpdateBrand(updateBrand);
         }
 
         public Brand DeleteBrand(int id)
         {
-            if (_brandRepository.ReadBrandById(id) == null)
-            {
-                throw new Exception("The brand could not be found");
-            }
-
             return _brandRepository.DeleteBrand(id);
         }
     }
