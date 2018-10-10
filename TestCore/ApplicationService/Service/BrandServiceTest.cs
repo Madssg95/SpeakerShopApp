@@ -50,23 +50,23 @@ namespace TestCore.ApplicationService.Service
         }
 
         [Fact]
-                                          public void ReadBrandByIdSecureRepositoryIsCalled()
-                                          {
-                                              var brandRepo = new Mock<IBrandRepository>();
-                                              var speakerRepo = new  Mock<ISpeakerRepository>();
+         public void ReadBrandByIdSecureRepositoryIsCalled()
+         {
+         var brandRepo = new Mock<IBrandRepository>();
+         var speakerRepo = new  Mock<ISpeakerRepository>();
                                               
-                                              IBrandService brandService = new BrandService(brandRepo.Object, speakerRepo.Object);
+         IBrandService brandService = new BrandService(brandRepo.Object, speakerRepo.Object);
                                               
-                                              var brand = new Brand()
-                                              {
-                                                  SpeakerBrand = "Bose"
-                                              };
+         var brand = new Brand()
+         {
+           SpeakerBrand = "Bose"
+         };
                                               
-                                              var isCalled = false;
-                                              brandRepo.Setup(x => x.ReadBrandById(It.IsAny<int>())).Callback(() => isCalled = true);
+         var isCalled = false;
+         brandRepo.Setup(x => x.ReadBrandById(It.IsAny<int>())).Callback(() => isCalled = true);
                                   
-                                              brandService.ReadBrandById(It.IsAny<int>());
-                                              Assert.True(isCalled);
+         brandService.ReadBrandById(It.IsAny<int>());
+         Assert.True(isCalled);
         }
 
         [Fact]
