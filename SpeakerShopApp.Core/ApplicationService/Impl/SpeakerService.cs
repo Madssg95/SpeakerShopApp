@@ -42,11 +42,11 @@ namespace SpeakerShopApp.Core.ApplicationService.Impl
             {
                 throw new InvalidDataException("Can not create a speaker without a speaker brand");
             }
-            /*else if (string.IsNullOrEmpty(speaker.Url))
+            else if (string.IsNullOrEmpty(speaker.Url))
             {
                 throw new InvalidDataException("Can not create a speaker without an url");
             }
-            */
+            
             return _speakerRepository.CreateSpeaker(speaker);
         }
 
